@@ -1,0 +1,149 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cre5b_equipementdebureaus",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cre5b_equipementdebureau",
+    "Name": "Equipement de bureaux",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Propriétaire",
+      "cre5b_emplacement": "Emplacement",
+      "cre5b_equipementdebureau_AsyncOperations": "Tâches système",
+      "cre5b_equipementdebureau_BulkDeleteFailures": "Échecs des suppressions en bloc",
+      "cre5b_equipementdebureau_DuplicateBaseRecord": "Enregistrements dupliqués (cre5b_equipementdebureau_DuplicateBaseRecord)",
+      "cre5b_equipementdebureau_DuplicateMatchingRecord": "Enregistrements dupliqués (cre5b_equipementdebureau_DuplicateMatchingRecord)",
+      "cre5b_equipementdebureau_MailboxTrackingFolders": "Dossiers de suivi automatique de la boîte aux lettres",
+      "cre5b_equipementdebureau_PrincipalObjectAttributeAccesses": "Partage de champ",
+      "cre5b_equipementdebureau_ProcessSession": "Sessions de traitement",
+      "cre5b_equipementdebureau_SyncErrors": "Erreurs de synchronisation",
+      "cre5b_equipementdebureauid": "Equipement de bureau",
+      "cre5b_iddelequipement": "ID de l'équipement",
+      "cre5b_nom": "Nom",
+      "cre5b_prix": "Prix",
+      "cre5b_prix_base": "Prix (de base)",
+      "cre5b_quantite": "Quantité",
+      "cre5b_type": "Type",
+      "createdby": "Créé par",
+      "createdon": "Créé le",
+      "createdonbehalfby": "Créé par (délégué)",
+      "exchangerate": "Taux de change",
+      "importsequencenumber": "Numéro séquentiel d’importation",
+      "modifiedby": "Modifié par",
+      "modifiedon": "Modifié le",
+      "modifiedonbehalfby": "Modifié par (délégué)",
+      "overriddencreatedon": "Enregistrement créé le",
+      "owningbusinessunit": "Division propriétaire",
+      "owningteam": "Équipe propriétaire",
+      "owninguser": "Utilisateur propriétaire",
+      "statecode": "Statut",
+      "statuscode": "Raison du statut",
+      "timezoneruleversionnumber": "Numéro de version de la règle du fuseau horaire",
+      "transactioncurrencyid": "Devise",
+      "utcconversiontimezonecode": "Code de fuseau horaire pour la conversion UTC",
+      "versionnumber": "Numéro de version"
+    },
+    "PreferredName": "Equipement de bureaux",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Equipement de bureaux (Affichages)",
+    "Name": "_cre5b_equipementdebureau_views",
+    "RelatedEntityName": "Equipement de bureaux",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "013f2002-3558-457f-bebc-42df90c39c3c": "Vue associée\u00A0: Equipement de bureau",
+      "35bab73f-2855-4e11-9335-62656c742e21": "Vue Recherche avancée\u00A0: Equipement de bureau",
+      "3a4a2946-7d78-4428-b96f-41a1ba4fb916": "Vue Recherche\u00A0: Equipement de bureau",
+      "a3958dcc-0194-4930-8f97-38de7c933670": "Equipement de bureaux actifs",
+      "f3ec5a9e-b1fc-47bd-bcea-595405054856": "Equipement de bureaux inactifs"
+    }
+  },
+  {
+    "DisplayName": "Emplacement (Equipement de bureaux)",
+    "Name": "cre5b_equipementdebureau_cre5b_emplacement",
+    "OptionSetInfoNameMapping": {
+      "983420000": "Cellenza",
+      "983420001": "Cellenza Sud-Est",
+      "983420002": "Cellenza Grand-Ouest"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cre5b_emplacement",
+        "OptionSetReferenceEntityName": "Equipement de bureaux"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cre5b_emplacement",
+    "RelatedEntityName": "Equipement de bureaux",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Type (Equipement de bureaux)",
+    "Name": "cre5b_equipementdebureau_cre5b_type",
+    "OptionSetInfoNameMapping": {
+      "983420000": "Ordinateur",
+      "983420001": "Imprimante",
+      "983420002": "Téléphone",
+      "983420003": "Chaise",
+      "983420004": "Bureau",
+      "983420005": "Emplacement"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cre5b_type",
+        "OptionSetReferenceEntityName": "Equipement de bureaux"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cre5b_type",
+    "RelatedEntityName": "Equipement de bureaux",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Statut (Equipement de bureaux)",
+    "Name": "cre5b_equipementdebureau_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Actif",
+      "1": "Inactif"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Equipement de bureaux"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Equipement de bureaux",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Raison du statut (Equipement de bureaux)",
+    "Name": "cre5b_equipementdebureau_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Actif",
+      "2": "Inactif"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Equipement de bureaux"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Equipement de bureaux",
+    "Type": "OptionSetInfo"
+  }
+]
